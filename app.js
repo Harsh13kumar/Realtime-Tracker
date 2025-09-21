@@ -1,4 +1,3 @@
-const { Socket } = require("dgram");
 const express = require("express");
 const app = express();
 const http = require("http")
@@ -12,9 +11,10 @@ const io = socketio(server)
 io.on("connection",function (socket) {
     console.log("connected"); 
     socket.on("send-location",function (data){
-        io.emit("receive-loction",{id:socket.id,...data})
+    io.emit("receive-location", { id: socket.id, ...data });
+
     })
-    socket.on("dissconnect",function(){
+    socket.on("disconnect",function(){
         io.emit("user-disconnected",socket.id)
     })
 })
@@ -25,6 +25,5 @@ app.use(express.static(path.join(__dirname,"public")))
 app.get("/", function (req, res) {
   res.render("index"); 
 });
-app.get("")
 server.listen(3000);
   
