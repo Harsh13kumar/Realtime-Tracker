@@ -12,7 +12,7 @@ if (navigator.geolocation) {
     {
       enableHighAccuracy: true,
       maximumAge: 0,
-      timeout: 5000,
+      timeout: 3000,
     }
   );
 }
@@ -27,7 +27,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 const marker = {};
 
 socket.on("receive-loction", (data) => {
-  map.setView([data.latitude, data.longitude], 15);
+  map.setView([data.latitude, data.longitude], 16);
   id = data.id;
   if (marker[id]) {
     marker[id].setLatLng([data.latitude, data.longitude]);
