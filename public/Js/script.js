@@ -28,6 +28,7 @@ L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
 const marker = {};
 
 socket.on("receive-location", (data) => {
+  console.log(data.id);
 map.flyTo([data.latitude, data.longitude], 19);
   const id = data.id;
   if (marker[id]) {
