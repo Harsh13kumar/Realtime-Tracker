@@ -31,6 +31,7 @@ Realtime Tracker is a web application that enables live location tracking of use
    Visit `http://localhost:3000` in your browser.
 
 ## Usage
+- You can try the live demo at: [Here👋](https://realtime-tracker-kzi7.onrender.com)
 - Open the application in your browser.
 - Allow location access when prompted.
 - Your location will be shared and displayed on the map in real time.
