@@ -16,7 +16,7 @@ Realtime Tracker is a web application that enables live location tracking of use
 ## Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/realtime-tracker.git
+   git clone https://github.com/Harsh13kumar/Realtime-Tracker.git
    cd realtime-tracker
    ```
 2. **Install dependencies:**
@@ -75,9 +75,9 @@ This project is licensed under the MIT License.
 
 ## Contact
 For questions or support, please contact:
-- **Name:** Aryan Kumar
-- **Email:** your.email@example.com
-- **GitHub:** [yourusername](https://github.com/yourusername)
+- **Name:** Harsh kumar
+- **Email:** businessharsh72@gmail.com
+- **GitHub:** [Harsh13kumar](https://github.com/Harsh13kumar)
 
 ## Acknowledgements
 - [Leaflet.js](https://leafletjs.com/)
