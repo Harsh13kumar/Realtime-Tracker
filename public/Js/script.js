@@ -32,7 +32,6 @@ socket.on("receive-loction", (data) => {
   if (marker[id]) {
     marker[id].setLatLng([data.latitude, data.longitude]);
   } else {
-    marker["harsh"]=L.marker([nearby.lat, nearby.lng]).addTo(map);
     marker[id] = L.marker([data.latitude, data.longitude]).addTo(map);
   }
   console.log(marker);
